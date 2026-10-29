@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <header>
+        <h1 id="A1">TechOps & SysAdmin Blog</h1>
+        <p>Es un blog técnico para consultar noticias</p>
+    </header>
+</head>
+<body>
+    
+    <aside class="sidebar">
+        <h3>Navegación</h3>
+        <ul>
+        <li><a href="#B2">Noticia 1</a></li>
+        <li><a href="#C3">Noticia 2</a></li>
+        <li><a href="#D4">Noticia 3</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <article>
+        <h2 id="B2">Microsoft lanza un parche urgente para aplicaciones y servidores: qué corrige el fallo de Brotli</h2>
+
+        <time datetime="2026-10-27">27 de octubre de 2026</time><br>
+
+        
+        <a href="https://www.20minutos.es/tecnologia/ciberseguridad/microsoft-lanza-parche-urgente-aplicaciones-servidores-corrige-fallo-brotli_7053808_0.html">
+        <img src="Windows.webp" alt="Windows">
+        </a>
+
+        <section>
+
+            <p>Microsoft ha publicado una actualización de seguridad fuera de banda (OBB, por sus siglas) para .NET 8, .NET 9 y .NET 10, así como para la tercera versión candidata de .NET 11. Acorde a la información compartida por la compañía, el parche está distribuido fuera del calendario habitual de actualizaciones y corrige varias vulnerabilidades que pueden comprometer la seguridad de las aplicaciones y los sistemas que utilizan estas tecnologías, por ello, Microsoft recomienda instalar las nuevas versiones lo antes posible.
+
+Uno de los fallos corregidos afecta al algoritmo de descompresión Brotli, utilizado para procesar determinados datos comprimidos. Identificada como CVE-2026-111497, esta vulnerabilidad puede permitir que un atacante sin autenticar lea o modifique la memoria de un proceso, teniendo en cuenta que entre sus posibles consecuencias figuran la exposición de información, la interrupción del funcionamiento de un servicio y la obtención de privilegios elevados.</p>
+
+        </section>
+
+        <section>
+            <h3>Solución aplicada</h3>
+            <p>Microsoft detalla varios pasos para instalar las correcciones de seguridad en función de cómo se ejecuten o distribuyan las aplicaciones:</p>
+
+            <ul>
+                <li>Aplicaciones que utilizan el entorno de ejecución instalado en el sistema: Es necesario instalar la versión actualizada de .NET correspondiente a la aplicación y reiniciarla para aplicar los cambios.</li>
+                <li>Aplicaciones autónomas: Deben recompilarse y publicarse de nuevo con el entorno de ejecución actualizado. Instalar una versión más reciente de .NET en el equipo no actualiza automáticamente la que está incluida en la propia aplicación.</li>
+                <li>Aplicaciones en contenedores: Hay que reconstruirlas y desplegarlas de nuevo utilizando las imágenes de contenedor de .NET actualizadas.</li>
+                <li>Entornos que compilan .NET desde el código fuente: Deben descargar los artefactos de compilación actualizados para la versión correspondiente y reconstruir los paquetes para incorporar la corrección relacionada con las propiedades de los archivos TAR.</li>
+                <li>Usuarios de ASP.NET Core en .NET 8 y .NET 9 que utilizan archivos TAR: Hay que actualizar la instalación con el archivo TAR del entorno de ejecución de ASP.NET Core correspondiente a su versión, incluso si no compilan .NET desde el código fuente.</li>
+            </ul>
+
+
+        </section>
+        </article>
+        
+        <form>
+            <fieldset>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="email">Correo</label>
+                <input type="email" id="email" name="email">
+
+                <br><br>
+
+                <textarea name="textarea" id="textarea" placeholder="Por favor, escribe aqui" rows="5" cols="53"></textarea>
+                
+                <br><br>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+
+        </form>
+
+        <article>
+            <h2>SEIDOR obtiene la AWS Migration & Modernization Competency</h2>
+
+            <time datetime="2026-10-27">27 de octubre de 2026</time>
+
+            <section>
+                <h3 id="C3">SEIDOR y AWS, una colaboración de éxito</h3>
+                <p>
+                    La obtención de la AWS Migration and Modernization Competency posiciona a SEIDOR como AWS Partner con experiencia especializada para ayudar a los clientes a adoptar la nube y transformar sus aplicaciones, reducir costes de licencias, optimizar costes operativos y mejorar rendimiento, agilidad y resiliencia.
+                </p>
+
+                <a href="https://www.computing.es/cloud/seidor-obtiene-la-aws-migration-modernization-competency/">
+                    <img src="migracion.webp" alt="migracion" width="500" height="300">
+                </a>
+
+                <p>
+                    La obtención de la AWS Migration and Modernization Competency se suma al estatus AWS Premier Tier Services Partner y a la AWS DevOps Competency, reforzando su especialización en AWS. La relación de SEIDOR con AWS refleja un compromiso sostenido con el desarrollo de capacidades avanzadas en cloud, automatización, operaciones, migración y gestión de entornos tecnológicos a escala.
+
+Según Eduard Bonet, Director de Cloud & IT Infrastructure en SEIDOR, “la AWS Migration and Modernization Competency confirma la madurez de nuestra práctica cloud y la capacidad de nuestros equipos para abordar migraciones de gran volumen con una metodología contrastada».
+
+El directivo también constata que, «para nuestros clientes, supone poder avanzar hacia la nube con el soporte técnico de SEIDOR como AWS Partner validado y acceder a herramientas, beneficios y programas específicos que les permiten afrontar estos proyectos con mayor seguridad, planificación y continuidad operativa”.
+                </p>
+            </section>
+        </article>
+
+        <form>
+            <fieldset>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="email">Correo</label>
+                <input type="email" id="email" name="email">
+
+                <br><br>
+
+                <textarea name="textarea" id="textarea" placeholder="Por favor, escribe aqui" rows="5" cols="53"></textarea>
+                
+                <br><br>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+
+        </form>
+
+        <article>
+            <h2 id="D4">Consejos para comprobar que tus copias de seguridad funcionan y van a ser útiles</h2>
+
+            <time datetime="2026-10-25">25 de cotubre de 2026</time>
+
+            <section>
+                <h3>Cómo verificar las copias de seguridad</h3>
+                <p>
+                    Puedes hacer copias de seguridad de los archivos de tu móvil, del ordenador o de cualquier otro dispositivo. Esto puede incluir documentos importantes que puedas necesitar en algún momento. Por ello, es clave que esa copia realmente funcione bien, esté actualizada y bien configurada.
+                </p>
+                
+            </section>
+        </article>
+
+        <form>
+            <fieldset>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="email">Correo</label>
+                <input type="email" id="email" name="email">
+
+                <br><br>
+
+                <textarea name="textarea" id="textarea" placeholder="Por favor, escribe aqui" rows="5" cols="53"></textarea>
+                
+                <br><br>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+
+        </form>
+    </main>
+
+    <footer>
+        <h3>Derechos de autor</h3>
+        <p>&copy; 2026 blogtecnico.</p>
+        <a href="#A1">Volver</a>
+    </footer>
+
+    
+</body>
+</html>
